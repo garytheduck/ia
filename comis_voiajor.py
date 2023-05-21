@@ -80,6 +80,6 @@ def comis_voiajor(n, orase, distante, start):
     print("Timpul de executie: ", timp_executie, " secunde.")
 
 
-n, orase, distante, start = citeste_date_intrare('comis_voiajor_input.txt')
+n, orase, distante, start = citeste_date_intrare('comis_voiajor_input1.txt')
 if n is not None:
     comis_voiajor(n, orase, distante, start)

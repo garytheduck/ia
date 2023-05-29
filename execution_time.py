@@ -2,7 +2,8 @@ import time
 from regineBacktracking import n_queens_backtracking
 from regineLee import queens_lee
 from regineAlpinist import hill_climbing
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+
 
 def measure_time(n, runs):
     times = []
@@ -54,17 +55,17 @@ hill_climbing_times = [0.0004, 0.003, 0.02, 0.15, 1.8, 22.6]
 n_values = [4, 6, 8, 10, 12, 14]
 
 # Creăm diagrama
-# plt.plot(n_values, backtracking_times, label='Backtracking')
-# plt.plot(n_values, lee_times, label='Lee')
-# plt.plot(n_values, hill_climbing_times, label='Hill Climbing')
+plt.plot(n_values, backtracking_times, label='Backtracking')
+plt.plot(n_values, lee_times, label='Lee')
+plt.plot(n_values, hill_climbing_times, label='Hill Climbing')
 
-# # Adăugăm titlul și etichetele pentru axele diagramelor
-# plt.title('Timpul de execuție pentru problema reginelor')
-# plt.xlabel('Dimensiunea tablei de șah (N)')
-# plt.ylabel('Timpul de execuție (secunde)')
+# Adăugăm titlul și etichetele pentru axele diagramelor
+plt.title('Timpul de execuție pentru problema reginelor')
+plt.xlabel('Dimensiunea tablei de șah (N)')
+plt.ylabel('Timpul de execuție (secunde)')
 
-# # Adăugăm legenda
-# plt.legend()
+# Adăugăm legenda
+plt.legend()
 
-# # Afișăm diagrama
-# plt.show()
+# Afișăm diagrama
+plt.show()
